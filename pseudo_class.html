@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{color: darkblue;
+        }
+        h1:hover{
+            font-size: 90px;
+            font-weight: 800;
+        }
+        .special-effect:hover{
+            color: darkgreen;
+            font-size: 70px;
+            background-color: darkkhaki;
+
+        }
+        input:focus{
+            color: seagreen;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        li:nth-child(2n+1){
+            background-color: teal;
+        }
+        li:nth-last-child(1){
+            background-color: tomato;
+        }
+        .visited{
+            color: yellowgreen;
+        }
+        h3::before{
+            content: "Wow!";
+            font-size: 15px;
+            background-color: darksalmon;
+        }
+        .bye::after{
+            content: "amazing";
+            font-size: 15px;
+            background-color: goldenrod;
+        }
+        body {
+  
+  counter-reset: section;
+}
+
+p::before {
+  
+  counter-increment: section;
+  content: "awesome-story" counter(section) ". ";
+}
+p::after{
+    content:"😍";
+}
+       
+        
+    
+
+        
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class</h1>
+    <h1>Normal Class</h1>
+    <h1 class="special-effect"> Decent Class</h1>
+    <h3 class="bye">Going Nuts</h3>
+    <h3 class="bye">May God Save Me!</h3>
+    <input name="email" type="text">
+    <br>
+    <input name="password" type="text">
+    <br>
+    <ul>
+        <li>Psycho</li>
+        <li>Psyche</li>
+        <li>soul</li>
+        <li>body</li>
+        <li>mind</li>
+        <li>all ruined</li>
+    </ul>
+    
+    <a class="visited" href="https://youtu.be/CqgmozFr_GM">Learn How to handle pressure</a>
+    
+    <p>It's important that you learn to deal with pressure.</p>
+    <p>Even the most famous generals like Rommel had nervous breakdown on the war field.  </p>
+    <p>Popularly known as the Desert Fox, Rommel had committed suicide.</p>
+    <p>Famous Rommel Quotes:</p>
+    <p>Don't fight a battle if you don't gain anything by winning.</p>
+    <p>In a man-to-man fight, the winner is he who has one more round in his magazine.</p>
+    
+    
+    
+   
+</body>
+</html>
